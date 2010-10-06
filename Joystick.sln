@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Joystick", "Joystick\Joystick.vcproj", "{1EA6C3C6-17BF-4B2A-9F4F-6C352073B0A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JoystickLib", "JoystickLib\JoystickLib.csproj", "{E1E21B2B-13AF-4FD6-A530-C018EBAD015B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|Win32 = Debug|Win32
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1EA6C3C6-17BF-4B2A-9F4F-6C352073B0A1}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{1EA6C3C6-17BF-4B2A-9F4F-6C352073B0A1}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{1EA6C3C6-17BF-4B2A-9F4F-6C352073B0A1}.Debug|Mixed Platforms.Build.0 = Debug|Win32
+		{1EA6C3C6-17BF-4B2A-9F4F-6C352073B0A1}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1EA6C3C6-17BF-4B2A-9F4F-6C352073B0A1}.Debug|Win32.Build.0 = Debug|Win32
+		{1EA6C3C6-17BF-4B2A-9F4F-6C352073B0A1}.Release|Any CPU.ActiveCfg = Release|Win32
+		{1EA6C3C6-17BF-4B2A-9F4F-6C352073B0A1}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{1EA6C3C6-17BF-4B2A-9F4F-6C352073B0A1}.Release|Mixed Platforms.Build.0 = Release|Win32
+		{1EA6C3C6-17BF-4B2A-9F4F-6C352073B0A1}.Release|Win32.ActiveCfg = Release|Win32
+		{1EA6C3C6-17BF-4B2A-9F4F-6C352073B0A1}.Release|Win32.Build.0 = Release|Win32
+		{E1E21B2B-13AF-4FD6-A530-C018EBAD015B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1E21B2B-13AF-4FD6-A530-C018EBAD015B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1E21B2B-13AF-4FD6-A530-C018EBAD015B}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{E1E21B2B-13AF-4FD6-A530-C018EBAD015B}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{E1E21B2B-13AF-4FD6-A530-C018EBAD015B}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{E1E21B2B-13AF-4FD6-A530-C018EBAD015B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1E21B2B-13AF-4FD6-A530-C018EBAD015B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1E21B2B-13AF-4FD6-A530-C018EBAD015B}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{E1E21B2B-13AF-4FD6-A530-C018EBAD015B}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{E1E21B2B-13AF-4FD6-A530-C018EBAD015B}.Release|Win32.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
