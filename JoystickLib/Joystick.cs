@@ -157,26 +157,30 @@ namespace JoystickMach3Plugin {
 
         void OnDataReceived(object sender, SerialDataReceivedEventArgs args) {
             lock (_serialLock) {
-                var lines = port.ReadExisting().Split(new string[] { "\r\n" }, StringSplitOptions.RemoveEmptyEntries);
-                foreach (var l in lines) {
-                    var line = l.Trim();
-                    var axis = l.Substring(0, 2);
-                    var direction = l.Substring(2, 1);
-                    lock (_stateLock) {
-                        var state = _state.AxisStates[axis];
-                        switch (direction) {
-                            case "0":
-                                state.Direction = Direction.NONE;
-                                break;
-                            case "-":
-                                state.Direction = Direction.BACKWARD;
-                                break;
-                            case "+":
-                                state.Direction = Direction.FORWARD;
-                                break;
-                            default: break;
+                try {
+                    var lines = port.ReadExisting().Split(new string[] { "\r\n" }, StringSplitOptions.RemoveEmptyEntries);
+                    foreach (var l in lines) {
+                        var line = l.Trim();
+                        var axis = l.Substring(0, 2);
+                        var direction = l.Substring(2, 1);
+                        lock (_stateLock) {
+                            var state = _state.AxisStates[axis];
+                            switch (direction) {
+                                case "0":
+                                    state.Direction = Direction.NONE;
+                                    break;
+                                case "-":
+                                    state.Direction = Direction.BACKWARD;
+                                    break;
+                                case "+":
+                                    state.Direction = Direction.FORWARD;
+                                    break;
+                                default: break;
+                            }
                         }
                     }
+                } catch (Exception ex) {
+                    Console.WriteLine("Exception: " + ex.Message);
                 }
             }
         }
@@ -187,7 +191,7 @@ namespace JoystickMach3Plugin {
             }
         }
 
-        
+
 
     }
 }
