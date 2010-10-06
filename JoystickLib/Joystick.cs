@@ -68,6 +68,10 @@ namespace JoystickMach3Plugin {
             _settings.MasterVelocity = velocity;
         }
 
+        public static void SetReverseAxes(bool p) {
+            _settings.ReverseAxes = p;
+        }
+
         public static int GetMaxVelocity() {
             return _settings.MaxVelocity;
         }
@@ -80,6 +84,10 @@ namespace JoystickMach3Plugin {
             return _settings.MasterVelocity;
         }
 
+        public static bool GetReverseAxes() {
+            return _settings.ReverseAxes;
+        }
+
         public static void SaveSettings() {
             if (File.Exists(SETTINGS_PATH)) File.Delete(SETTINGS_PATH);
             using (var file = File.OpenWrite(SETTINGS_PATH)) {
@@ -87,6 +95,7 @@ namespace JoystickMach3Plugin {
                 formatter.Serialize(file, _settings);
             }
         }
+
     }
 
     [Serializable]
@@ -95,6 +104,7 @@ namespace JoystickMach3Plugin {
         public int MaxVelocity { get; set; }
         public int Acceleration { get; set; }
         public int MasterVelocity { get; set; }
+        public bool ReverseAxes { get; set; }
     }
 
     public enum Direction {

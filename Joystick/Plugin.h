@@ -18,3 +18,5 @@ void piJogOff(short axis);
 void piPurge(short flags);
 void piProbe();
 void piHome(short axis);
+
+#define MENU_COUNT 1

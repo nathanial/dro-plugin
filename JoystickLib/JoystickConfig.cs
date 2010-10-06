@@ -20,6 +20,7 @@ namespace JoystickMach3Plugin {
             masterVelocity.Text = Joystick.GetMasterVelocity().ToString();
             acceleration.Text = Joystick.GetAcceleration().ToString();
             maxVelocity.Text = Joystick.GetMaxVelocity().ToString();
+            reverseAxesBox.Checked = Joystick.GetReverseAxes();
         }
 
         private void okButton_Click(object sender, EventArgs e) {
@@ -42,6 +43,11 @@ namespace JoystickMach3Plugin {
             } catch (Exception ex) {
                 MessageBox.Show("Could not set MaxVelocity: " + ex.Message);
             }
+            try {
+                Joystick.SetReverseAxes(reverseAxesBox.Checked);
+            } catch (Exception ex) {
+                MessageBox.Show("Could not set ReverseAxes: " + ex.Message);
+            }
             Joystick.SaveSettings();
             Joystick.Reinit();
             this.Close();
@@ -50,5 +56,6 @@ namespace JoystickMach3Plugin {
         private void cancelButton_Click(object sender, EventArgs e) {
             this.Close();
         }
+
     }
 }

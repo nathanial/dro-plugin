@@ -33,11 +33,12 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.reverseAxesBox = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // okButton
             // 
-            this.okButton.Location = new System.Drawing.Point(187, 215);
+            this.okButton.Location = new System.Drawing.Point(186, 252);
             this.okButton.Name = "okButton";
             this.okButton.Size = new System.Drawing.Size(75, 23);
             this.okButton.TabIndex = 0;
@@ -47,7 +48,7 @@
             // 
             // cancelButton
             // 
-            this.cancelButton.Location = new System.Drawing.Point(268, 215);
+            this.cancelButton.Location = new System.Drawing.Point(267, 252);
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.Size = new System.Drawing.Size(75, 23);
             this.cancelButton.TabIndex = 1;
@@ -120,11 +121,23 @@
             this.label4.TabIndex = 8;
             this.label4.Text = "Port List";
             // 
+            // reverseAxesBox
+            // 
+            this.reverseAxesBox.AutoSize = true;
+            this.reverseAxesBox.CheckAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.reverseAxesBox.Location = new System.Drawing.Point(95, 215);
+            this.reverseAxesBox.Name = "reverseAxesBox";
+            this.reverseAxesBox.Size = new System.Drawing.Size(92, 17);
+            this.reverseAxesBox.TabIndex = 10;
+            this.reverseAxesBox.Text = "Reverse Axes";
+            this.reverseAxesBox.UseVisualStyleBackColor = true;
+            // 
             // JoystickConfig
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(350, 245);
+            this.ClientSize = new System.Drawing.Size(350, 287);
+            this.Controls.Add(this.reverseAxesBox);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -155,5 +168,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox acceleration;
+        private System.Windows.Forms.CheckBox reverseAxesBox;
     }
 }
