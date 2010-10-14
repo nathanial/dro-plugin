@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 10.00
 # Visual Studio 2008
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Joystick", "Joystick\Joystick.vcproj", "{1EA6C3C6-17BF-4B2A-9F4F-6C352073B0A1}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DROJoystick", "Joystick\Joystick.vcproj", "{1EA6C3C6-17BF-4B2A-9F4F-6C352073B0A1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JoystickLib", "JoystickLib\JoystickLib.csproj", "{E1E21B2B-13AF-4FD6-A530-C018EBAD015B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DROJoystickLib", "JoystickLib\DROJoystickLib.csproj", "{E1E21B2B-13AF-4FD6-A530-C018EBAD015B}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "DRO Jog Installer", "DRO Jog Installer\DRO Jog Installer.vdproj", "{69E1F835-2420-4F22-B5D2-3C1D27DD366A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +37,12 @@ Global
 		{E1E21B2B-13AF-4FD6-A530-C018EBAD015B}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{E1E21B2B-13AF-4FD6-A530-C018EBAD015B}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{E1E21B2B-13AF-4FD6-A530-C018EBAD015B}.Release|Win32.ActiveCfg = Release|Any CPU
+		{69E1F835-2420-4F22-B5D2-3C1D27DD366A}.Debug|Any CPU.ActiveCfg = Debug
+		{69E1F835-2420-4F22-B5D2-3C1D27DD366A}.Debug|Mixed Platforms.ActiveCfg = Debug
+		{69E1F835-2420-4F22-B5D2-3C1D27DD366A}.Debug|Win32.ActiveCfg = Debug
+		{69E1F835-2420-4F22-B5D2-3C1D27DD366A}.Release|Any CPU.ActiveCfg = Release
+		{69E1F835-2420-4F22-B5D2-3C1D27DD366A}.Release|Mixed Platforms.ActiveCfg = Release
+		{69E1F835-2420-4F22-B5D2-3C1D27DD366A}.Release|Win32.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

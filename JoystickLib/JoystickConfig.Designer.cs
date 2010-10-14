@@ -150,7 +150,7 @@
             this.Controls.Add(this.okButton);
             this.Name = "JoystickConfig";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Joystick Config";
+            this.Text = "DRO Config";
             this.ResumeLayout(false);
             this.PerformLayout();
 

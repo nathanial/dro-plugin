@@ -2,7 +2,7 @@
 <VisualStudioProject
 	ProjectType="Visual C++"
 	Version="9.00"
-	Name="Joystick"
+	Name="DROJoystick"
 	ProjectGUID="{1EA6C3C6-17BF-4B2A-9F4F-6C352073B0A1}"
 	RootNamespace="Joystick"
 	TargetFrameworkVersion="196613"
@@ -162,7 +162,7 @@
 	<References>
 		<ProjectReference
 			ReferencedProjectIdentifier="{E1E21B2B-13AF-4FD6-A530-C018EBAD015B}"
-			RelativePathToProject=".\JoystickLib\JoystickLib.csproj"
+			RelativePathToProject=".\JoystickLib\DROJoystickLib.csproj"
 		/>
 		<AssemblyReference
 			RelativePath="System.Windows.Forms.dll"

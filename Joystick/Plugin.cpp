@@ -15,7 +15,7 @@ bool piInitControl(){
 }
 
 char* piSetProName(LPCSTR name){
-	return "EM Joystick";
+	return "DRO Jog";
 }
 
 void piPostInitControl(){
@@ -44,7 +44,7 @@ void piPostInitControl(){
 		}
 		
 		if(hPluginMenu){
-			InsertMenu(hPluginMenu, -1, MF_BYPOSITION, menuStart, "EM Joystick");
+			InsertMenu(hPluginMenu, -1, MF_BYPOSITION, menuStart, "DRO Jog");
 		}
 	}
 }
